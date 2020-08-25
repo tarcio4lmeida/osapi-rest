@@ -34,7 +34,7 @@ public class OrdemServicoController {
 	@Autowired
 	private OrdemServicoRepository  ordemServicoRepository;
 	
-	@Autowired
+	@Autowired(required=true)
 	private ModelMapper modelMapper;
 	
 	@PostMapping

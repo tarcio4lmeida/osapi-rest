@@ -45,7 +45,7 @@ public class ClienteController {
 		 return ResponseEntity.notFound().build();
 	}
 	
-	@PostMapping
+	@PostMapping("/clientes")
 	@ResponseStatus(HttpStatus.CREATED)
 	public Cliente adicionar(@Valid @RequestBody Cliente cliente) {
 		return cadastroCLienteService.salvar(cliente);
